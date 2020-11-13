@@ -1,0 +1,210 @@
+body{
+  background-color: black;
+}
+
+.contain{
+  position: absolute;
+margin-top: 100px;
+margin-left: 100px;
+
+}
+
+
+  .heart {
+  position: absolute;
+  margin: auto;
+  top: 400px;
+  right: 30px;
+  bottom: 0;
+  left: 170px;
+  background-color: pink;
+  height: 50px;
+  width: 50px;
+  transform: rotate(135deg);
+}
+.heart::after {
+  background-color: pink;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "" ;
+  background-color: pink;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}  
+.use{
+position: absolute;
+height: 150px;
+left:125px;
+width: 150px;
+top: 200px;
+background: transparent;
+border-radius: 50%;
+box-shadow: 20px 10px 0 0 white;
+transform: rotate(60deg);
+}
+
+.head{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(68, 52, 33);
+  border-radius: 50%;
+
+}
+.eye-1{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  animation-name: changing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  box-shadow: 20px 10px 10px 0 ;
+}
+@keyframes changing {
+
+  0% {
+    box-shadow: 20px 10px 10px 0 ;
+  }
+  30%{
+    
+    box-shadow: 10px 10px 10px 0 ;
+
+  }
+  70%{
+  
+    box-shadow: 0 10px 10px 0 ;
+  
+  }
+  90%{
+    box-shadow: -10px 10px 10px 0 ;
+  }
+  100%{
+    box-shadow: -20px 10px 10px 0 ;
+
+  }
+}
+.eyeball{
+  width: 20px;
+  height: 50px;
+  left: 75px;
+  top: 130px;
+  background-color: black;
+  border-radius: 30%;
+  position: absolute;
+  animation-name: movement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes movement{
+  0% {
+    left: 80px;
+  }
+  30%{
+    left: 75px;
+    
+
+  }
+  70%{
+    left: 70px;
+    
+  
+  }
+  90%{
+    left: 65px;
+  }
+  100%{
+    left: 60px;
+
+  }
+}
+.eye-2{
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 260px;
+  top: 130px;
+  box-shadow: 20px 10px 10px 0 ;
+  animation-name: changings;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+
+}
+.eyeball-2{
+  width: 20px;
+  height: 50px;
+  left: 300px;
+  top: 130px;
+  background-color: black;
+  border-radius: 30%;
+  position: absolute;
+  animation-name: movements;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes movements{
+
+  0% {
+    left: 305px;
+  }
+  30%{
+    left: 300px;
+    
+
+  }
+  70%{
+    left: 295px;
+    
+  
+  }
+  90%{
+    left: 290px;
+  }
+  100%{
+    left: 285px;
+
+  }
+}
+
+.ear-1{
+  position: absolute;
+height: 150px;
+left:-38px;
+width: 150px;
+top: 150px;
+background: transparent;
+border-radius: 50%;
+box-shadow: 25px 15px 0 0 white;
+transform: rotate(145deg);
+}
+.ear-2{
+  position: absolute;
+height: 150px;
+left:280px;
+width: 150px;
+top: 150px;
+background: transparent;
+border-radius: 50%;
+box-shadow: 25px 15px 0 0 white;
+transform: rotate(-25deg);
+}
+
+
+
